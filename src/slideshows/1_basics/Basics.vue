@@ -32,7 +32,7 @@ export default {
     }
   },
   infos: {
-    title: 'Основы Go',
+    title: '1. Основы Go',
     description: 'Базовые конструкции языка',
     path: '1'
   },

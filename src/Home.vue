@@ -1,8 +1,8 @@
 <template lang='pug'>
 .frontpage
   .content
-    h1
-      img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/207px-Go_Logo_Aqua.svg.png")
+    // img.logo(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/207px-Go_Logo_Aqua.svg.png")
+    img.gopher(src="./gopher.png")
     h2 Разработка веб-сервисов на Go
 
     .thumbnails
@@ -38,22 +38,35 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
 
 .frontpage {
   width: 100%;
   height: auto;
   position: absolute;
   .content{
-    width: 800px;
-    max-width: 90%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
+}
+
+.gopher {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 40px auto;
 }
 
 h1, h2, h3, h4, p {
   font-weight: normal;
-  font-family: 'Roboto'
+  font-family: 'Russo One'
 }
 
 h1 {
@@ -93,6 +106,7 @@ h4 {
 .thumbnails {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .thumbnail-description {

@@ -10,7 +10,7 @@ import eagle from 'eagle.js'
 export default {
   mixins: [ eagle.slideshow ],
   infos: {
-    title: 'Асинхронная модель Go',
+    title: '2. Асинхронная модель Go',
     description: 'Многопоточность, конкурентность итд',
     path: '2'
   }
