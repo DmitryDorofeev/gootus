@@ -1,13 +1,11 @@
 //- (:style="{ fontSize:  '20px' }")
 <template>
-<div class="eg-theme-gourmet">
-  <div class="eg-slideshow">
+  <div class="eg-slideshow slide">
     <v-slide>
-      <h1>Разработка веб-сервисов на Go</h1>
+      <h2>Разработка веб-сервисов на Go</h2>
       <p class="center"> 100% Swag </p>
     </v-slide>
   </div>
-</div>
 </template>
 
 <script>
@@ -42,38 +40,10 @@ export default {
 }
 </script>
 
-<style lang='scss'>
-@import "node_modules/eagle.js/src/themes/gourmet/gourmet";
-#EagleRecipes {
-  a {
-    font-weight: bold;
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-  }
-  h1 {
-    margin-top: 0em;
-  }
-  .logo {
-    display: block;
-    margin: 0 auto;
-    max-height: 8em;
-  }
-  .eg-slideshow {
-    .eg-slide {
-      .eg-slide-content {
-        .demo-slideshow {
-          position: relative;
-          width: 12em;
-          height: 8em;
-          margin: 0 auto;
-        }
-      }
-    }
-  }
-  .eg-slideshow.embedded-slideshow-theme {
-    background-image: none;
-    background-color: white;
-  }
+<style scoped>
+.slide {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242,247,254);
 }
 </style>
