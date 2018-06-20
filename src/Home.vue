@@ -7,14 +7,16 @@
 
     .thumbnails
       .box-card(v-for='slideshow in slideshows')
-        router-link(:to='slideshow.infos.path' @click.native="click")
-          .embedded-slideshow-container
-            component(:is="slideshow", :embedded='true',
-                      :keyboardNavigation='false',
-                      :mouseNavigation='false')
-        .caption
-          h4 {{slideshow.infos.title}}
-          p.thumbnail-description {{slideshow.infos.description}}
+        .inner
+          router-link(:to='slideshow.infos.path' @click.native="click")
+            .embedded-slideshow-container
+              component(:is="slideshow", :embedded='true',
+                        :keyboardNavigation='false',
+                        :mouseNavigation='false')
+          .caption
+            h4 {{slideshow.infos.title}}
+            p.thumbnail-description {{slideshow.infos.description}}
+    .copyright Dmitry Dorofeev 2018
 </template>
 
 <script>
@@ -41,8 +43,9 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Russo+One);
 
 .frontpage {
+  background-color: rgb(242,247,254);
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
   .content{
     max-width: 1200px;
@@ -56,7 +59,7 @@ export default {
   display: block;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .logo {
@@ -114,14 +117,40 @@ h4 {
 }
 
 .box-card {
+  position: relative;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 15px;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  z-index: 1;
+
+  .inner {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    top: 0;
+    left: 0;
+  }
+
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    top: 120px;
+    bottom: 7px;
+    left: 50px;
+    right: 30px;
+    z-index: -1;
+    box-shadow: 0 0 40px 13px rgba(0,0,0,.19);
+    border-radius: 100px/20px;
+  }
+
   .embedded-slideshow-container {
     position: relative;
     width: 150px;
     height: 120px;
     margin: 0 auto;
-    border: 1px solid grey;
     overflow: hidden;
   }
   h3, p {
