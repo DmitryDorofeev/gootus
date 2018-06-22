@@ -2,7 +2,7 @@
 .frontpage
   .content
     // img.logo(src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/207px-Go_Logo_Aqua.svg.png")
-    img.gopher(src="./gopher.png")
+    img.gopher(src="/static/gopher.png")
     h2 Разработка веб-сервисов на Go
 
     .thumbnails
