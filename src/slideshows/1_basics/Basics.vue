@@ -1,41 +1,33 @@
-//- (:style="{ fontSize:  '20px' }")
 <template>
-  <div class="eg-slideshow slide">
-    <v-slide>
-      <h2>Разработка веб-сервисов на Go</h2>
-      <p class="center"> 100% Swag </p>
-    </v-slide>
+  <div>
+    <t-slide>
+      <Title image="/static/build.png">
+        Лекция 1. Основы Go
+      </Title>
+    </t-slide>
+    <t-slide>
+      <Title image="/static/micro.png">
+        Спасибо за внимание!
+      </Title>
+    </t-slide>
   </div>
 </template>
 
 <script>
 import eagle from 'eagle.js'
-
-var TransitionedSlide = {
-  mixins: [eagle.slide],
-  props: {
-    enter: { default: 'slideInRight' },
-    leave: { default: 'slideOutLeft' }
-  }
-}
+import TSlide from '../../components/TSlide.js'
+import Title from '../../components/Title'
 
 export default {
   mixins: [eagle.slideshow],
-  data: () => {
-    return {
-      fullPageWidth: null,
-      fullPageHeight: null,
-      parentHeight: null,
-      parentWidth: null
-    }
-  },
   infos: {
     title: '1. Основы Go',
     description: 'Базовые конструкции языка',
     path: '1'
   },
   components: {
-    'v-slide': TransitionedSlide
+    't-slide': TSlide,
+    Title
   }
 }
 </script>
