@@ -45,7 +45,7 @@ export default {
 .frontpage {
   background-color: rgb(242,247,254);
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   .content{
     max-width: 1200px;
@@ -162,6 +162,10 @@ h4 {
 a {
   text-decoration: inherit;
   color: inherit;
+}
+
+.copyright {
+  margin: 10px 0;
 }
 
 </style>
