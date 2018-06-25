@@ -121,7 +121,7 @@ h4 {
   text-align: center;
   margin: 30px 15px;
   background-color: #fff;
-  width: 300px;
+  width: 350px;
   border-radius: 5px;
   z-index: 1;
 
@@ -132,6 +132,7 @@ h4 {
     padding: 16px;
     top: 0;
     left: 0;
+    box-sizing: border-box;
   }
 
   &:before, &:after{

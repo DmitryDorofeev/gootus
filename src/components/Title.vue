@@ -8,11 +8,17 @@
 <style scoped>
   .title {
     font-family: 'Russo One';
+    font-size: 40px;
   }
   .image {
     display: block;
     width: 300px;
     margin: 30px 0;
+  }
+
+  .embedded-slideshow .image {
+    width: 50px;
+    margin: 15px 0;
   }
 </style>
 
