@@ -194,6 +194,11 @@
       </Common>
     </t-slide>
     <t-slide>
+      <Common title="Планировщик изнутри">
+        <img src="/static/sched.png" width="700px"/>
+      </Common>
+    </t-slide>
+    <t-slide>
       <Title image="/static/micro.png">
         Спасибо за внимание!
       </Title>
