@@ -43,6 +43,13 @@
       </Common>
     </t-slide>
     <t-slide>
+      <Title>
+        <a href="https://www.youtube.com/watch?v=9Pk7xAT_aCU&list=PLrCZzMib1e9q-X5V9pTM6J0AemRWseM7I">Запись курса</a>
+        <br/>
+        (весна 2017)
+      </Title>
+    </t-slide>
+    <t-slide>
       <Title>Lets code!</Title>
     </t-slide>
   </div>

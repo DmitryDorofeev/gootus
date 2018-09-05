@@ -23,6 +23,16 @@
       </Common>
     </t-slide>
     <t-slide>
+      <Common title="Slices">
+        <IImage src="/static/slices.png"/>
+      </Common>
+    </t-slide>
+    <t-slide>
+      <Common title="Maps">
+        <IImage src="/static/maps.png"/>
+      </Common>
+    </t-slide>
+    <t-slide>
       <Title image="/static/micro.png">
         Спасибо за внимание!
       </Title>
