@@ -8,7 +8,7 @@
 <style scoped>
   .title {
     font-family: 'Russo One';
-    font-size: 40px;
+    font-size: 3em;
   }
   .image {
     display: block;

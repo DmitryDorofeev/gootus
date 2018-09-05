@@ -8,7 +8,7 @@
     .thumbnails
       .box-card(v-for='slideshow in slideshows')
         .inner
-          router-link(:to='slideshow.infos.path' @click.native="click")
+          router-link(:to='`${slideshow.infos.path}/1`' @click.native="click")
             .embedded-slideshow-container
               component(:is="slideshow", :embedded='true',
                         :keyboardNavigation='false',
@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import slideshows from 'slideshows/slideshows'
+import {list} from 'slideshows/slideshows.js'
 
 export default {
   data: function () {
     return {
-      slideshows: slideshows.list
+      slideshows: list
     }
   },
   mounted: function () {

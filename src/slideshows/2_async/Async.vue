@@ -15,33 +15,35 @@
         <Square color="transparent">
           Request &rarr;
           <Row>
-            <Square color="#ddffdd">
-              !#/usr/local/bin/perl<Space/>
-              <Square color="#ffffdd">
-                Thread #1<Space/>
-                <Square>
-                  /api/v1/messages
+            <Col>
+              <Square color="#ddffdd">
+                !#/usr/local/bin/perl<Space/>
+                <Square color="#ffffdd">
+                  Thread #1<Space/>
+                  <Square>
+                    /api/v1/messages
+                  </Square>
                 </Square>
               </Square>
-            </Square>
-            <Square color="#ddffdd">
-              !#/usr/local/bin/perl<Space/>
-              <Square color="#ffffdd">
-                Thread #1<Space/>
-                <Square>
-                  /api/v1/messages
+              <Square color="#ddffdd">
+                !#/usr/local/bin/perl<Space/>
+                <Square color="#ffffdd">
+                  Thread #1<Space/>
+                  <Square>
+                    /api/v1/messages
+                  </Square>
                 </Square>
               </Square>
-            </Square>
-            <Square color="#ddffdd">
-              !#/usr/local/bin/perl<Space/>
-              <Square color="#ffffdd">
-                Thread #1<Space/>
-                <Square>
-                  /api/v1/messages
+              <Square color="#ddffdd">
+                !#/usr/local/bin/perl<Space/>
+                <Square color="#ffffdd">
+                  Thread #1<Space/>
+                  <Square>
+                    /api/v1/messages
+                  </Square>
                 </Square>
               </Square>
-            </Square>
+            </Col>
           </Row>
         </Square>
         Эволюция метода - prefork
@@ -54,24 +56,26 @@
             <Square color="#ddffdd">
               java -cp Main.main myserver.jar<Space/>
               <Row>
-                <Square color="#ffffdd">
-                  Thread #1<Space/>
-                  <Square>
-                    /api/v1/messages
+                <Col>
+                  <Square color="#ffffdd">
+                    Thread #1<Space/>
+                    <Square>
+                      /api/v1/messages
+                    </Square>
                   </Square>
-                </Square>
-                <Square color="#ffffdd">
-                  Thread #2<Space/>
-                  <Square>
-                    /api/v1/messages
+                  <Square color="#ffffdd">
+                    Thread #2<Space/>
+                    <Square>
+                      /api/v1/messages
+                    </Square>
                   </Square>
-                </Square>
-                <Square color="#ffffdd">
-                  Thread #3<Space/>
-                  <Square>
-                    /api/v1/messages
+                  <Square color="#ffffdd">
+                    Thread #3<Space/>
+                    <Square>
+                      /api/v1/messages
+                    </Square>
                   </Square>
-                </Square>
+                </Col>
               </Row>
             </Square>
         </Square>
@@ -86,35 +90,37 @@
               node server.js
               <Space/>
               <Row>
-                <Square color="#ffffdd">
-                  Thread #1
-                  <Space/>
-                  <Square>
-                    /api/v1/messages
+                <Col>
+                  <Square color="#ffffdd">
+                    Thread #1
                     <Space/>
-                    <Row>
-                      <Col>
-                        <Square color="white">
-                          <Space/>
-                          wait
-                          <Space/>
-                        </Square>
-                        <Square color="pink">
-                          work
-                        </Square>
-                      </Col>
-                      <Col>
-                        <Square color="pink">
-                          work
-                          <Space/>
-                        </Square>
-                        <Square color="white">wait
-                          <Space/>
-                        </Square>
-                      </Col>
-                    </Row>
+                    <Square>
+                      /api/v1/messages
+                      <Space/>
+                      <Row>
+                        <Col>
+                          <Square color="white">
+                            <Space/>
+                            wait
+                            <Space/>
+                          </Square>
+                          <Square color="pink">
+                            work
+                          </Square>
+                        </Col>
+                        <Col>
+                          <Square color="pink">
+                            work
+                            <Space/>
+                          </Square>
+                          <Square color="white">wait
+                            <Space/>
+                          </Square>
+                        </Col>
+                      </Row>
+                    </Square>
                   </Square>
-                </Square>
+                </Col>
               </Row>
             </Square>
         </Square>
@@ -129,64 +135,66 @@
               go run main.go
               <Space/>
               <Row>
-                <Square color="#ffffdd">
-                  Thread #1
-                  <Space/>
-                  <Square>
-                    /api/v1/messages
+                <Col>
+                  <Square color="#ffffdd">
+                    Thread #1
                     <Space/>
-                    <Row>
-                      <Col>
-                        <Square color="white">
-                          <Space/>
-                          wait
-                          <Space/>
-                        </Square>
-                        <Square color="pink">
-                          work
-                        </Square>
-                      </Col>
-                      <Col>
-                        <Square color="pink">
-                          work
-                          <Space/>
-                        </Square>
-                        <Square color="white">wait
-                          <Space/>
-                        </Square>
-                      </Col>
-                    </Row>
+                    <Square>
+                      /api/v1/messages
+                      <Space/>
+                      <Row>
+                        <Col>
+                          <Square color="white">
+                            <Space/>
+                            wait
+                            <Space/>
+                          </Square>
+                          <Square color="pink">
+                            work
+                          </Square>
+                        </Col>
+                        <Col>
+                          <Square color="pink">
+                            work
+                            <Space/>
+                          </Square>
+                          <Square color="white">wait
+                            <Space/>
+                          </Square>
+                        </Col>
+                      </Row>
+                    </Square>
                   </Square>
-                </Square>
-                <Square color="#ffffdd">
-                  Thread #1
-                  <Space/>
-                  <Square>
-                    /api/v1/messages
+                  <Square color="#ffffdd">
+                    Thread #1
                     <Space/>
-                    <Row>
-                      <Col>
-                        <Square color="white">
-                          <Space/>
-                          wait
-                          <Space/>
-                        </Square>
-                        <Square color="pink">
-                          work
-                        </Square>
-                      </Col>
-                      <Col>
-                        <Square color="pink">
-                          work
-                          <Space/>
-                        </Square>
-                        <Square color="white">wait
-                          <Space/>
-                        </Square>
-                      </Col>
-                    </Row>
+                    <Square>
+                      /api/v1/messages
+                      <Space/>
+                      <Row>
+                        <Col>
+                          <Square color="white">
+                            <Space/>
+                            wait
+                            <Space/>
+                          </Square>
+                          <Square color="pink">
+                            work
+                          </Square>
+                        </Col>
+                        <Col>
+                          <Square color="pink">
+                            work
+                            <Space/>
+                          </Square>
+                          <Square color="white">wait
+                            <Space/>
+                          </Square>
+                        </Col>
+                      </Row>
+                    </Square>
                   </Square>
-                </Square>
+                </Col>
               </Row>
             </Square>
         </Square>

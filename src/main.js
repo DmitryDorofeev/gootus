@@ -8,7 +8,7 @@ import Home from './Home'
 import Eagle from 'eagle.js'
 import 'eagle.js/dist/eagle.css'
 
-import slideshows from './slideshows/slideshows.js'
+import {list} from './slideshows/slideshows.js'
 /* eslint-disable no-new */
 
 Vue.use(Eagle)
@@ -16,9 +16,9 @@ Vue.use(Router)
 Vue.config.productionTip = false
 
 var routes = []
-slideshows.list.forEach(function (slideshow) {
+list.forEach(function (slideshow) {
   routes.push({
-    path: '/' + slideshow.infos.path,
+    path: `/${slideshow.infos.path}/:slide`,
     component: slideshow
   })
 })

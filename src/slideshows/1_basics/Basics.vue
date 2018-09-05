@@ -6,6 +6,23 @@
       </Title>
     </t-slide>
     <t-slide>
+      <Common title="$GOPATH">
+        <IImage src="/static/gopath.png"/>
+      </Common>
+    </t-slide>
+    <t-slide>
+      <Common title="Основные команды Go">
+        <ul>
+          <li><code>go run &lt;filename&gt;.go</code></li>
+          <li><code>go build main.go</code></li>
+          <li><code>go install packagename</code></li>
+          <li><code>go get packageurl</code></li>
+          <li><code>go fmt</code></li>
+          <li><code>go vet</code></li>
+        </ul>
+      </Common>
+    </t-slide>
+    <t-slide>
       <Title image="/static/micro.png">
         Спасибо за внимание!
       </Title>
@@ -15,8 +32,11 @@
 
 <script>
 import eagle from 'eagle.js'
+// import slideshow from '../slideshows.js'
 import TSlide from '../../components/TSlide.js'
 import Title from '../../components/Title'
+import Common from '../../components/Common'
+import IImage from '../../components/Image'
 
 export default {
   mixins: [eagle.slideshow],
@@ -27,7 +47,9 @@ export default {
   },
   components: {
     't-slide': TSlide,
-    Title
+    Title,
+    Common,
+    IImage
   }
 }
 </script>

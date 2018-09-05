@@ -4,11 +4,11 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .col {
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
 }
 
 </style>
