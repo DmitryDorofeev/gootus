@@ -22,12 +22,17 @@
     </t-slide>
     <t-slide>
       <Common title="RPC">
-        <IImage src="/static/jsonrpc.png"/>
+        <IImage src="/static/rpc.png"/>
       </Common>
     </t-slide>
     <t-slide>
       <Common title="REST">
-        <IImage src="/static/rest2.png"/>
+        <IImage src="/static/rest-crud.png" fluid/>
+      </Common>
+    </t-slide>
+     <t-slide>
+      <Common title="GraphQL">
+        <IImage src="/static/graphql.png" fluid/>
       </Common>
     </t-slide>
     <t-slide>
